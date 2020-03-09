@@ -26,7 +26,8 @@ class ActivityRecognition {
 			DetectedActivity.ON_BICYCLE,
 			DetectedActivity.RUNNING,
 			DetectedActivity.WALKING,
-			DetectedActivity.ON_FOOT
+			DetectedActivity.ON_FOOT,
+			DetectedActivity.IN_VEHICLE
 	};
 
 	private static final Map<Integer, String> DETECTED_ACTIVITIES_NAMES = new HashMap<>();
@@ -38,10 +39,12 @@ class ActivityRecognition {
 		DETECTED_ACTIVITIES_NAMES.put(DetectedActivity.RUNNING, "RUNNING");
 		DETECTED_ACTIVITIES_NAMES.put(DetectedActivity.WALKING, "WALKING");
 		DETECTED_ACTIVITIES_NAMES.put(DetectedActivity.UNKNOWN, "UNKNOWN");
+		DETECTED_ACTIVITIES_NAMES.put(DetectedActivity.IN_VEHICLE, "IN_VEHICLE");
 		DETECTED_ACTIVITIES_ICONS.put(DetectedActivity.ON_BICYCLE, R.drawable.ic_activity_bicycle);
 		DETECTED_ACTIVITIES_ICONS.put(DetectedActivity.ON_FOOT, R.drawable.ic_activity_walk);
 		DETECTED_ACTIVITIES_ICONS.put(DetectedActivity.RUNNING, R.drawable.ic_activity_run);
 		DETECTED_ACTIVITIES_ICONS.put(DetectedActivity.WALKING, R.drawable.ic_activity_walk);
+		DETECTED_ACTIVITIES_ICONS.put(DetectedActivity.IN_VEHICLE, R.drawable.ic_activity_vehicle);
 	}
 
 	private static ActivityRecognition instance;
